@@ -4,8 +4,6 @@ const User = require('../models/user');
 app.post('/user', (req, res) => {
   const { username, password } = req.body;
 
-  console.log(username, password);
-
   let user = new User({ username, password });
 
   user.save((err, userDB) => {

@@ -14,7 +14,7 @@ db.connect();
 
 // config user controllers
 app.use( require('./controllers/user') );
-
+app.use( require('./controllers/usuario') );
 
 
 app.listen(process.env.PORT, () => console.log(`Listening on port ${process.env.PORT}`));
