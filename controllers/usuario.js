@@ -53,6 +53,8 @@ app.post('/usuario', (req, res) => {
     telefono,
   } = req.body;
 
+  console.log(req);
+
   let usuario = new Usuario({
     casado,
     direccion,
