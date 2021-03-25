@@ -94,6 +94,8 @@ app.post('/alumno', (req, res) => {
     numeroGrupo,
   });
 
+  console.log(numeroGrupo, nroAlumno, nombre);
+
   if(nroAlumno.length !== 6) {
     return res.status(400).json({
       ok:false,
